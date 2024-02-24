@@ -32,7 +32,52 @@ public class Exercise3SortedNumbers {
 				4874, 4876, 4880, 4881, 4882, 4885, 4902, 4907, 4914, 4919, 4927, 4943, 4965, 4975, 4977, 4983, 4985,
 				4987, 4989, 4990, 4998 };
 
-		System.out.println(randomNumers.length);
+		//System.out.println(findNumber(randomNumers,2716));
+		System.out.println(randomNumers[randomNumers.length-1]);
+		System.out.println(randomNumers[0]);
+		
+		
 
+	}
+	
+	
+	
+	private static int findNumber(int[] numbers, int n) {
+		
+		for(int x=0;x<numbers.length;x++) {
+			if(numbers[x]==n) {
+				System.out.println("It took "+x+" loop cycles to find "+n);
+				return x;
+			}
+		}
+		return -1;
+		
+	}
+	
+	private static int findLargest(int[] numbers) {
+		
+		int largest=0;
+
+		for(int x=0;x<numbers.length;x++) {
+		
+			if(numbers[x]>largest)largest=numbers[x];
+		}
+		
+		System.out.println("It took "+numbers.length+" loop cycles to find the largest number");
+		return largest;
+		
+	}
+	
+	private static int findSmallest(int[] numbers) {
+		int smallest=findLargest(numbers);
+
+		for(int x=0;x<numbers.length;x++) {
+		
+			if(numbers[x]<smallest)smallest=numbers[x];
+		}
+		
+		System.out.println("It took "+numbers.length+" loop cycles to find the largest number");
+		return smallest;
+		
 	}
 }
