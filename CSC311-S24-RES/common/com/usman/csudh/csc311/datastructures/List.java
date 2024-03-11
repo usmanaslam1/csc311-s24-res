@@ -29,7 +29,7 @@ public interface List {
 	 * @param index the index to insert the element at
 	 * @throws ListInvalidIndexException if the index is invalid
 	 */
-	public void insert(int data, int index) throws ListInvalidIndexException;
+	public void insert(int index, int data) throws ListInvalidIndexException;
 
 	/**
 	 * Delete an element from the list at a specific index and returns the delete item

@@ -102,8 +102,8 @@ public class ArrayList implements List{
 	 * @return the value at the given index
 	 *
 	 */
-	public void put(int item, int index) throws ListInvalidIndexException{
-		if (index >= arrayPointer || index < 0) {
+	public void put(int index, int item) throws ListInvalidIndexException{
+		if (index > arrayPointer-1 || index < 0) {
 			throwInvalidIndexException();
 		}
 		data[index] = item;
@@ -144,7 +144,7 @@ public class ArrayList implements List{
 	 * @param item  the value to insert
 	 * @param index the index to insert the value
 	 */
-	public void insert(int item, int index) throws ListInvalidIndexException {
+	public void insert(int index, int item) throws ListInvalidIndexException {
 
 
 		// Check if the index is valid

@@ -14,7 +14,8 @@ public class LinkedListTest {
 		//myList.add();
 		
 		
-		System.out.println(myList.remove(-1));  
+		//System.out.println(myList.remove(-1)); 
+		myList.insert(0,100);
 	    System.out.println(myList);
 	    
 	}

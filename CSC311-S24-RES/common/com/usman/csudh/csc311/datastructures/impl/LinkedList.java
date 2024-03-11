@@ -69,7 +69,7 @@ public class LinkedList implements List {
 	 */
 
 	@Override
-	public void insert(int item, int loc) throws ListInvalidIndexException {
+	public void insert(int loc, int item) throws ListInvalidIndexException {
 
 		// Find the node at the specified location
 		Node current =(loc==0?head:findNode(loc-1));
@@ -102,18 +102,24 @@ public class LinkedList implements List {
 	 */
 	@Override
 	public void put(int loc, int item) throws ListInvalidIndexException {
-		// Find the node at specified location
-		Node current = findNode(loc-1);
+		// Find the node at the specified location
+		Node current =(loc==0?head:findNode(loc-1));
 
 		// Node not found
-		if (current == null) throwInvalidIndexException();
+		if (current == null||current.next==null) throwInvalidIndexException();
 		
 		//Create a new node with data item
 		Node newNode = new Node(item);
 		
-		// Update links to replace the existing node
-		current.next = newNode;
-		newNode.next = current.next.next;
+		if(loc==0) {
+            newNode.next = head.next;
+            head = newNode;
+        }
+        else {
+			newNode.next = current.next.next;
+			current.next = newNode;
+		}
+        
 	}
 
 	/**
