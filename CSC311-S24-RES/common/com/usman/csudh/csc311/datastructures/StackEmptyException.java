@@ -1,4 +1,4 @@
-package com.usman.csc311.lists;
+package com.usman.csudh.csc311.datastructures;
 
 public class StackEmptyException extends Exception{
 	public StackEmptyException(String message) {

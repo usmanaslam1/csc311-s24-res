@@ -1,28 +1,22 @@
-import com.usman.csc311.lists.arraybased.List;
+import com.usman.csudh.csc311.datastructures.impl.ArrayList;
 
 public class ListTest {
 
 	public static void main(String[] args) throws Exception{
 		
 		
-		List list = new List();
+		ArrayList list = new ArrayList();
 		list.add(10);
 		list.add(20);
-		list.add(30);
-        list.put(1, 2);
-        list.add(101);
-        list.put(3, 3);
-        
+		list.add(30);        
         
         System.out.println(list);
-        System.out.println(list.size());
-        list.delete(1);
+        list.insert(101,1);
         System.out.println(list);
-        System.out.println(list.isEmpty());
-        list.clear();
-        System.out.println(list.size());
-        System.out.println(list.isEmpty());
-
+        list.remove(2);
+        
+        System.out.println(list);
+  
 
 	}
 }

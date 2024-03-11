@@ -12,11 +12,12 @@
  * 
  */
 
-package com.usman.csc311.lists.arraybased;
+package com.usman.csudh.csc311.datastructures.impl;
 
-import com.usman.csc311.lists.StackEmptyException;
+import com.usman.csudh.csc311.datastructures.Stack;
+import com.usman.csudh.csc311.datastructures.StackEmptyException;
 
-public class Stack {
+public class ArrayStack implements Stack {
 	/**
 	 * The default capacity of the stack.
 	 *
@@ -44,7 +45,7 @@ public class Stack {
 	 * The default constructor to create a stack with the initial capacity.
 	 *
 	 */
-	public Stack() {
+	public ArrayStack() {
 		data= new int[DEFAULT_CAPACITY];
 	}
 	
@@ -54,7 +55,7 @@ public class Stack {
 	 * @param size the size of the stack
 	 *
 	 */
-	public Stack(int size) {
+	public ArrayStack(int size) {
 		data = new int[size];
 	}
 	

@@ -13,11 +13,12 @@
  * 
  */
 
-package com.usman.csc311.lists.arraybased;
+package com.usman.csudh.csc311.datastructures.impl;
 
-import com.usman.csc311.lists.ListInvalidIndexException;
+import com.usman.csudh.csc311.datastructures.List;
+import com.usman.csudh.csc311.datastructures.ListInvalidIndexException;
 
-public class List {
+public class ArrayList implements List{
 
 	/**
 	 * The initial capacity of the list.
@@ -46,7 +47,7 @@ public class List {
 	 * The default constructor to create a list with the initial capacity.
 	 *
 	 */
-	public List() {
+	public ArrayList() {
 		data = new int[INITIAL_CAPACITY];
 	}
 
@@ -56,7 +57,7 @@ public class List {
 	 * @param size the size of the list
 	 *
 	 */
-	public List(int size) {
+	public ArrayList(int size) {
 		data = new int[size];
 	}
 
@@ -73,6 +74,21 @@ public class List {
 			resizeArray();
 		}
 		data[arrayPointer++] = item;
+
+	}
+
+	/**
+	 * The method to add an array of items to the list. The items are added to the end of the
+	 * list. The size of the underlying array is checked and if the array is full, a
+	 * new array is created with higher capacity.
+	 * 
+	 * @param items the array to add to the list
+	 *
+	 */
+	public void add(int[] items) {
+		for (int i : items) {
+			add(i);
+		}
 
 	}
 
@@ -176,7 +192,7 @@ public class List {
 	 * @param index the index of the value to delte
 	 */
 
-	public void delete(int index) throws ListInvalidIndexException{
+	public int remove(int index) throws ListInvalidIndexException{
 
 		// Check if the index is valid
 		if (index > arrayPointer || index < 0) {
@@ -186,6 +202,8 @@ public class List {
 		
 		int loopCount = 0;
 
+		int value = data[index];
+		
 		// Move the values to the left to fill the space created by the deleted value
 		for (int i = index; i < arrayPointer; i++) {
 			data[i] = data[i + 1];
@@ -194,6 +212,7 @@ public class List {
 		// Decrement the array pointer because the value is deleted
 		arrayPointer--;
 		System.out.println("Delete: " + loopCount);
+		return value;
 	}
 
 	/**
@@ -226,4 +245,5 @@ public class List {
 	private void throwInvalidIndexException() throws ListInvalidIndexException{
 		throw new ListInvalidIndexException("Invalid index");
 	}
+
 }
