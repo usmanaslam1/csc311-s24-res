@@ -132,12 +132,12 @@ public class LinkedList implements List {
 	 */
 	@Override
 	public int remove(int loc) throws ListInvalidIndexException {
-	
+		if(loc>=size()) throwInvalidIndexException();
 		// Find the node one before the one that is to be deleted
 		Node n = (loc==0?head:findNode(loc - 1));
 
 		// Node not found
-		if (n == null||n.next==null)
+		if (n == null)
 			throwInvalidIndexException();
 
 		
