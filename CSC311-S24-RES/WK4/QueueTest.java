@@ -1,10 +1,12 @@
 import com.usman.csudh.csc311.datastructures.QueueEmptyException;
-import com.usman.csudh.csc311.datastructures.impl.ArrayQueue;
+import com.usman.csudh.csc311.datastructures.Queue;
+
+import com.usman.csudh.csc311.datastructures.impl.LinkedQueue;
 
 public class QueueTest {
 
 	public static void main(String[] args) throws QueueEmptyException {
-		ArrayQueue q = new ArrayQueue();
+		Queue q = new LinkedQueue();
 		
         q.add(10);
         q.add(20);

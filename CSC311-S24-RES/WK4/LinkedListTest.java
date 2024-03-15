@@ -11,11 +11,10 @@ public class LinkedListTest {
 		List myList=new LinkedList();
 		
 		myList.add(new int[]{1,2,3,4,5});
-		//myList.add();
 		
+		myList.remove(4);
+
 		
-		//System.out.println(myList.remove(-1)); 
-		myList.insert(0,100);
 	    System.out.println(myList);
 	    
 	}
