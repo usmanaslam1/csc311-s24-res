@@ -252,16 +252,4 @@ public class LinkedList implements List {
 		throw new ListInvalidIndexException("Invalid index");
 	}
 
-	// Private inner class Node
-	private class Node {
-
-		int data;
-		Node next;
-
-		public Node(int data) {
-			this.data = data;
-			next = null;
-		}
-
-	}
 }
