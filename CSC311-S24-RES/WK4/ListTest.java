@@ -1,4 +1,4 @@
-import com.usman.csudh.csc311.datastructures.impl.ArrayList;
+import com.usman.csudh.csc311.adt.impl.ArrayList;
 
 public class ListTest {
 

@@ -1,7 +1,7 @@
-package com.usman.csudh.csc311.datastructures.impl;
+package com.usman.csudh.csc311.adt.impl;
 
-import com.usman.csudh.csc311.datastructures.Queue;
-import com.usman.csudh.csc311.datastructures.QueueEmptyException;
+import com.usman.csudh.csc311.adt.Queue;
+import com.usman.csudh.csc311.adt.QueueEmptyException;
 public class ArrayQueue  implements Queue{
 	/**
 	 * The initial capacity of the list.

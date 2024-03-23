@@ -1,7 +1,7 @@
-import com.usman.csudh.csc311.datastructures.StackEmptyException;
-import com.usman.csudh.csc311.datastructures.impl.ArrayStack;
-import com.usman.csudh.csc311.datastructures.impl.LinkedStack;
-import com.usman.csudh.csc311.datastructures.Stack;
+import com.usman.csudh.csc311.adt.Stack;
+import com.usman.csudh.csc311.adt.StackEmptyException;
+import com.usman.csudh.csc311.adt.impl.ArrayStack;
+import com.usman.csudh.csc311.adt.impl.LinkedStack;
 public class StackTest {
 
 	public static void main(String[] args) throws StackEmptyException {

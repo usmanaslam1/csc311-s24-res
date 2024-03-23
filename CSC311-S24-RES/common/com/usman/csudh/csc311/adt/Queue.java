@@ -1,4 +1,4 @@
-package com.usman.csudh.csc311.datastructures;
+package com.usman.csudh.csc311.adt;
 
 /**
  * This interface represents a queue data structure. It contains all the key methods that a queue should support.

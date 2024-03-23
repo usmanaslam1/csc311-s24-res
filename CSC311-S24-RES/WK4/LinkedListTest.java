@@ -1,7 +1,7 @@
 
-import com.usman.csudh.csc311.datastructures.List;
-import com.usman.csudh.csc311.datastructures.impl.ArrayList;
-import com.usman.csudh.csc311.datastructures.impl.LinkedList;
+import com.usman.csudh.csc311.adt.List;
+import com.usman.csudh.csc311.adt.impl.ArrayList;
+import com.usman.csudh.csc311.adt.impl.LinkedList;
 
 public class LinkedListTest {
 

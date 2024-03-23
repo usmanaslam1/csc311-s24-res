@@ -1,4 +1,4 @@
-package com.usman.csudh.csc311.datastructures.impl;
+package com.usman.csudh.csc311.adt.impl;
 
 public class MapNode {
 	String key;

@@ -1,15 +1,15 @@
-package com.usman.csudh.csc311.datastructures.impl;
-import com.usman.csudh.csc311.datastructures.Stack;
-import com.usman.csudh.csc311.datastructures.List;
-import com.usman.csudh.csc311.datastructures.ListInvalidIndexException;
-import com.usman.csudh.csc311.datastructures.StackEmptyException;
+package com.usman.csudh.csc311.adt.impl;
+import com.usman.csudh.csc311.adt.List;
+import com.usman.csudh.csc311.adt.ListInvalidIndexException;
+import com.usman.csudh.csc311.adt.Stack;
+import com.usman.csudh.csc311.adt.StackEmptyException;
 
 /**
  * A linked list implementation of a stack. The implementation uses forward linking nodes 
  * to provide the stack functionality.
  */
 
-public class LinkedStackNative implements Stack {
+public class LinkedStack implements Stack {
 
 	//Head node, staring point of stack
 	Node head; 
@@ -19,7 +19,7 @@ public class LinkedStackNative implements Stack {
      *
 	 */
 	 
-	public LinkedStackNative() {
+	public LinkedStack() {
 		head = null;
 	}
 	
@@ -88,7 +88,7 @@ public class LinkedStackNative implements Stack {
 	 * 
 	 * @return the number of items in the stack
 	 */
-	@Override
+	@Override	
 	public int size() {
 		Node current = head;
 		int count = 0;

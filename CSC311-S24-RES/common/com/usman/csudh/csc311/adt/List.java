@@ -1,4 +1,4 @@
-package com.usman.csudh.csc311.datastructures;
+package com.usman.csudh.csc311.adt;
 
 /**
  * Interface for for a list data structure. Contains key operations

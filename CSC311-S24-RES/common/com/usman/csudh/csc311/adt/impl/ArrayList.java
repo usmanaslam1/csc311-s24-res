@@ -13,10 +13,10 @@
  * 
  */
 
-package com.usman.csudh.csc311.datastructures.impl;
+package com.usman.csudh.csc311.adt.impl;
 
-import com.usman.csudh.csc311.datastructures.List;
-import com.usman.csudh.csc311.datastructures.ListInvalidIndexException;
+import com.usman.csudh.csc311.adt.List;
+import com.usman.csudh.csc311.adt.ListInvalidIndexException;
 
 public class ArrayList implements List{
 

@@ -1,7 +1,7 @@
-package com.usman.csudh.csc311.datastructures.impl;
+package com.usman.csudh.csc311.adt.impl;
 
-import com.usman.csudh.csc311.datastructures.List;
-import com.usman.csudh.csc311.datastructures.ListInvalidIndexException;
+import com.usman.csudh.csc311.adt.List;
+import com.usman.csudh.csc311.adt.ListInvalidIndexException;
 
 /**
  * A linked list implementation of the List interface. Linked list stores its as

@@ -1,7 +1,7 @@
-package com.usman.csudh.csc311.datastructures.impl;
-import com.usman.csudh.csc311.datastructures.Map;
+package com.usman.csudh.csc311.adt.impl;
+import com.usman.csudh.csc311.adt.Map;
 
-public class BasicMap implements com.usman.csudh.csc311.datastructures.Map{
+public class BasicMap implements com.usman.csudh.csc311.adt.Map{
 	
 	MapNode head;
 	
@@ -56,6 +56,54 @@ public class BasicMap implements com.usman.csudh.csc311.datastructures.Map{
 			current = current.next;
 		}
 		return result+="}";
+	}
+
+	@Override
+	public String remove(String key) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean containsKey(String key) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean containsValue(String value) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void clear() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String[] keys() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String[] values() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

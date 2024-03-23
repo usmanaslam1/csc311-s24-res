@@ -1,20 +1,20 @@
-package com.usman.csudh.csc311.datastructures.impl;
-import com.usman.csudh.csc311.datastructures.List;
-import com.usman.csudh.csc311.datastructures.ListInvalidIndexException;
-import com.usman.csudh.csc311.datastructures.Queue;
-import com.usman.csudh.csc311.datastructures.QueueEmptyException;
+package com.usman.csudh.csc311.adt.impl;
+import com.usman.csudh.csc311.adt.List;
+import com.usman.csudh.csc311.adt.ListInvalidIndexException;
+import com.usman.csudh.csc311.adt.Queue;
+import com.usman.csudh.csc311.adt.QueueEmptyException;
 
 /**
  * A linked list implementation of a queue. This implementation uses forward linking nodes
  * to provide the queue functionality.
  */
-public class LinkedQueueNative implements Queue{
+public class LinkedQueue implements Queue{
 	
 	Node head;
 
 	
 	
-	public LinkedQueueNative() {
+	public LinkedQueue() {
 		head = null;
 	}
 	

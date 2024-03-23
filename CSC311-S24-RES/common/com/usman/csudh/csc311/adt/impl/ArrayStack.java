@@ -12,10 +12,10 @@
  * 
  */
 
-package com.usman.csudh.csc311.datastructures.impl;
+package com.usman.csudh.csc311.adt.impl;
 
-import com.usman.csudh.csc311.datastructures.Stack;
-import com.usman.csudh.csc311.datastructures.StackEmptyException;
+import com.usman.csudh.csc311.adt.Stack;
+import com.usman.csudh.csc311.adt.StackEmptyException;
 
 public class ArrayStack implements Stack {
 	/**

@@ -1,7 +1,6 @@
-import com.usman.csudh.csc311.datastructures.QueueEmptyException;
-import com.usman.csudh.csc311.datastructures.Queue;
-
-import com.usman.csudh.csc311.datastructures.impl.LinkedQueue;
+import com.usman.csudh.csc311.adt.Queue;
+import com.usman.csudh.csc311.adt.QueueEmptyException;
+import com.usman.csudh.csc311.adt.impl.LinkedQueue;
 
 public class QueueTest {
 
