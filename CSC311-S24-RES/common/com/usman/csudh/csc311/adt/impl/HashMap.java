@@ -39,7 +39,12 @@ public class HashMap implements Map{
 	
 	private void rehash() {
 		
-	
+		if (size() < buckets.length * loadFactor) {
+			return;
+		}
+  
+		
+		
 		//TODO: Implement rehashing
 	}
 	
