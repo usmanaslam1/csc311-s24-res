@@ -5,11 +5,13 @@ package com.usman.csudh.csc311.adt;
  * that a list data structure should support.
  * 
  * @author Usman Aslam
+ * @version 1.0
+ * @since 2024-03-08
  */
 public interface List {
 
 	/**
-	 * Add an element to the list
+	 * Add an element to the list. The element is added to the end of the list.
 	 * @param data the element to add to the list
 	 */
 	public void add(int data);
@@ -36,6 +38,7 @@ public interface List {
 	 * this has been an improved version of the delete method
 	 * 
 	 * @param index the index to delete the element from
+	 * @return the deleted item
 	 * @throws ListInvalidIndexException if the index is invalid
 	 */
 	public int remove(int index) throws ListInvalidIndexException;
