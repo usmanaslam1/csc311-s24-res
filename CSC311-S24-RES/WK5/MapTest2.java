@@ -1,4 +1,4 @@
-import com.usman.csudh.csc311.datastructures.impl.HashMap;
+import com.usman.csudh.csc311.adt.impl.HashMap;
 public class MapTest2 {
 	public static void main(String[] args) {
 		

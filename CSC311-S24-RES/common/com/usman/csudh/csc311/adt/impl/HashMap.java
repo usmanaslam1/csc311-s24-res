@@ -39,22 +39,8 @@ public class HashMap implements Map{
 	
 	private void rehash() {
 		
-		//only rehash if the size of the map is greater or equal the load factor
-		
-		if (size() < loadFactor * buckets.length) {
-			return;
-		}
-		
-		MapNode[] oldBuckets = buckets;
-		buckets = new MapNode[oldBuckets.length * 2];
-		
-		for (int i = 0; i < oldBuckets.length; i++) {
-			MapNode current = oldBuckets[i];
-			while (current != null) {
-				put(current.key, current.value);
-				current = current.next;
-			}
-		}
+	
+		//TODO: Implement rehashing
 	}
 	
 	
