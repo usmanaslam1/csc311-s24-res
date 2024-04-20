@@ -1,23 +1,26 @@
 
 public class Fibbonaci1 {
-
+	
+	static long[] fibnumbers;
+	
 	public static void main(String[] args) {
-		int n=93; // number of terms
-		long[] fibsequence=new long[n];
-		fibsequence[0]=0;
-		fibsequence[1]=1;
+		int n=50; // number of terms
+		fibnumbers=new long[n+1];
 		
-		for (int i = 2; i < n; i++) {
-			fibsequence[i] = fibsequence[i - 1] + fibsequence[i - 2];
+		System.out.println(fibseq(n));
+		
+	}
+	
+	private static long fibseq(int n) {
+		if (n <= 1) {
+			return n;
+		}
+		if (fibnumbers[n] != 0) {
+			return fibnumbers[n];
 		}
 		
-		for (int i = 0; i < n; i++) {
-			System.out.println(fibsequence[i] + " ");
-		}
-		
-		
-		
-		
-		
+		long nthFibNumber=fibseq(n-1)+fibseq(n-2);
+		fibnumbers[n]=nthFibNumber;
+		return nthFibNumber;
 	}
 }
